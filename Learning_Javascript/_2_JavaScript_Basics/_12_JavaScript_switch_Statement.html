@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Example Switch statement</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var grade = 'A';
+
+        document.write("<h3>Example of Switch Statement</h3>");
+
+        switch (grade) {
+            case 'A':
+                document.write("The student has secured A");
+                break;
+            case 'B':
+                document.write("The student has secured B");
+                break;
+            default:
+                document.write("The student has not secured any grade");
+        }
+
+
+
+        var x = "1";
+
+        document.write("<h3>Example of Switch Statement</h3>");
+
+        switch (x) {
+            case 0:
+                document.write("Off");
+                break;
+            case 1:
+                document.write("On");
+                break;
+            default:
+                document.write("Incorrect Input");
+        }
+
+        document.write("<h3>Example of Switch Statement for day</h3>");
+
+        document.write("<br>");
+
+        switch (new Date().getDay()) {
+            case 1:
+                document.write("Its Monday");
+                break;
+            case 2:
+                document.write("Its Tuesday");
+                break;
+            case 3:
+                document.write("Its Wednesday");
+                break;
+            case 4:
+                document.write("Its Thursday");
+                break;
+            case 5:
+                document.write("Its Friday");
+                break;
+            case 6:
+                document.write("Its Saturday");
+                break;
+            case 7:
+                document.write("Its Sunday");
+                break;
+            default:
+                document.write("Incorrect Input");
+        }
+    </script>
+</body>
+
+</html>

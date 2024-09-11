@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript bind () vs apply () and call ()</title>
+</head>
+
+<body>
+    <script>
+        // var arr = [6, 7, 8, 9];
+
+        // var max = math.max.apply(arr);
+        // var max = math.min.apply(arr);
+
+        // document.writeln("<h3>JavaScript bind () vs apply () and call ()</h3>");
+
+        // document.writeln("<br>");
+
+        // document.writeln("Array values are ;");
+
+        // for (value of arr) {
+        //     document.writeln(value);
+        // }
+
+        // document.writeln("<br>");
+
+        // document.writeln("Maximum number is:" + max);
+        // document.writeln("<br>"); 
+
+
+
+        var arr1 = [1, 2, 3, 4];
+        var arr2 = [5, 6, 7, 8];
+
+        document.writeln("<h3>Example to join two arrays using apply()</h3>")
+        document.writeln("<br>")
+        document.writeln("First Arrayn values are :");
+
+        for (value of arr1) {
+            document.writeln(value);
+        }
+
+        document.writeln("<br>")
+
+        document.writeln("Second Array values are :");
+
+        for (value of arr2) {
+            document.writeln(value);
+        }
+
+        arr2.push.apply(arr2, arr1);
+
+        document.writeln("<br>");
+    </script>
+</body>
+
+</html>

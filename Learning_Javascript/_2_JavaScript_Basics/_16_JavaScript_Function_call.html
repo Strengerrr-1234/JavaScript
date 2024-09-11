@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // ----------->Constructor
+        //     class car {
+        //     var model;
+        //     var color;
+
+
+        //     car(model, color) {
+        //         this.model = model;
+        //         this.color = color;
+        //     }
+        // }
+
+        //     var a = new car("xuv", "red");
+        //     var a = new car("swift", "white");
+
+
+        // -------------> default function
+
+        var add = new function ("num1","num2","return num1 + num2");
+
+        document.writeln(add(2, 8));
+        document.writeln(add(10, 10));
+
+
+        var power = new function ("num1","num2","return Math.pow(num1,num2)");
+        document.writeln(power(5, 2));
+
+
+
+        // ----------------> JavaScript function method
+        function Emp(id, name) {
+            this.id = id;
+            this.name = name;
+        }
+
+        function PermanentEmp(id, name) {
+            Emp.call(id, name);
+        }
+        document.writeln(new PermanentEmp(1, "Pratik Patel").id)
+        document.writeln(new PermanentEmp(1, "Pratik Patel").name)
+    </script>
+
+</body>
+
+</html>

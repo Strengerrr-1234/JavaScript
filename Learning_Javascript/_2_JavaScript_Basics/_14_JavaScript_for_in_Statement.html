@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript for/in Statement</title>
+</head>
+
+<body>
+
+
+    <script>
+        document.writeln("<h3>JavaScript for/in Statement</h3>")
+
+        /*
+        syntax:
+        for (var in Object){
+            code block to be executed
+        }
+        */
+
+        /*
+
+        var temp = "";
+
+        var person = {
+            firstname: "Joel",
+            lastname: "Muniz",
+            age: 25,
+        }
+
+        for (value in person) {
+            temp = temp + person[value] + " ";
+            // document.writeln(person[value]);
+        }
+        document.writeln(temp);
+
+        */
+
+        /*
+                document.writeln("<h3>JavaScript for/of Statement</h3>")
+         
+                var temp = "";
+        
+                var person = {
+                    firstname: "aayush",
+                    lastname: "shakyawar",
+                    age: 22,
+                }
+        
+                for (value of person) {
+                    document.writeln(person[value]);
+                }
+        */
+
+        document.writeln("<h3>JavaScript for/of Statement</h3>")
+
+        var alphabets = ["A", "B", "C", "D"];
+
+        for (let i = 0; i < alphabets.length - 1; i++) {
+            document.writeln(alphabets[i]);
+        }
+
+        for (value of alphabets) {
+            document.writeln(value);
+        } 
+    </script>
+</body>
+
+</html>
